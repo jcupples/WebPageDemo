@@ -1,0 +1,186 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Synthwave</title>
+
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+<!--custom CSS/JS files--->
+<link rel="stylesheet" href="app.css">
+<script src="app.js"></script>
+</head>
+<body>
+            <!-- Navbar --->   
+            <nav class="navbar shadow">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navCollapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">    </a>
+                    </div>
+                    
+        
+                    <div class="collapse navbar-collapse" id="navCollapse">
+                    <ul class="nav navbar-nav">
+                            <li id="navButton" class="active"><a href="#">Base Camp</a></li>
+                            <li id="navButton"><a href="#">About</a></li>
+                            <li id="navButton"><a href="#">Contact</a></li>
+                        </ul>
+                        <!---put the search form inside a sub drop down when navbar is in collapsable state--->
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search on, my dude">
+                            </div>
+                            <button type="submit" class="btn">Search</button>
+                        </form>
+                    </div>
+                </div>   
+            </nav>
+        <!---end nav--->
+        <!---jumbotron header with nested nav--->
+        <div class="jumbotron headerstyle">            
+            <div class="container shadow h2showcase">
+                 <h1><strong>Synthwave</strong></h1>
+                <h4>The very best synthwave artists</h4>  
+            </div>
+        </div>
+        <!---end jumbotron--->
+
+        <!---IMG Carousel--->
+            <div id="mySlider" class="carousel slide" data-ride="carousel">
+                <!---selectors--->
+                <ol class="carousel-indicators">
+                    <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mySlider" data-slide-to="1"></li>
+                    <li data-target="#mySlider" data-slide-to="2"></li>
+                    <li data-target="#mySlider" data-slide-to="3"></li>
+                </ol>
+
+                <!---wrappers--->
+                <!---use Angular to call image array?--->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="img-responsive" src="images/pic1.jpg" alt="cat">
+                        <div class="carousel-caption">
+                            <h1>Assortment of artists</h1>
+                            <h4>This is a compiled picture</h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="images/pic2.jpg" alt="nature" >
+                        <div class="carousel-caption">
+                            <h1>Turbo Killer</h1>
+                            <h4>Still from the phenomenal video</h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img class="img-responsive" src="images/pic3.jpg" alt="city">
+                        <div class="carousel-caption">
+                            <h1>New Retro Wave</h1>
+                            <h4>One of the best synthwave labels</h4>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive" src="images/pic2.jpg" alt="nature" >
+                        <div class="carousel-caption">
+                            <h1>Another picture</h1>
+                            <h4>placeholder text</h4>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                    <!---manual controls--->
+
+            <a class="left carousel-control" href="#mySlider" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class="right carousel-control" href="#mySlider" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            </div>
+
+        <!---end carousel--->
+
+
+            <!---style these so these divs remain white while rest of background is blue--->
+            <!---Add buttons to the text sections--->
+        <div class="container-fluid textarea">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="padding shadow">
+                        <h2>How the 80s have taken over</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="padding shadow">
+                        <h2>More information on Synthwave</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!---code functionality that allows each video to be modular (i.e. clicking it will switch to another random video that isn't currently displayed)--->
+        <!---have each little section feature several videos from the same artist?--->
+            <!---use the layered paper effect to achieve the carousel look?--->
+            <!---use jQuery selectors?--->
+    
+          <div class="container-fluid">
+            <div class="row center">
+                <div class="col-sm-4 showcase">
+                    <h2 class="h2showcase">Gunship</h2>
+                        <div class="embed-responsive embed-responsive-16by9 shadow">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/-nC5TBv3sfU?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </div>
+                <div class="col-sm-4 showcase">
+                     <h2 class="h2showcase">Carpenter Brut</h2>
+                        <div class="embed-responsive embed-responsive-16by9 shadow">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/er416Ad3R1g?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </div>
+                <div class="col-sm-4 showcase">
+                    <h2 class="h2showcase">Dance with the Dead</h2>
+                        <div class="embed-responsive embed-responsive-16by9 shadow">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/rD5L8EpkgJg" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
+              <div class="row center">
+                <div class="col-sm-4 showcasebottom">
+                    <h2 class="h2showcase">The Midnight</h2>
+                        <div class="embed-responsive embed-responsive-16by9 shadow">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/9LD3NKlS55g?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </div>
+                <div class="col-sm-4 showcasebottom">
+                    <h2 class="h2showcase">Timecop1983</h2>
+                        <div class="embed-responsive embed-responsive-16by9 shadow">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/mkQ6H21QBXE?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </div>
+                <div class="col-sm-4 showcasebottom">
+                    <h2 class="h2showcase">College</h2>
+                        <div class="embed-responsive embed-responsive-16by9 shadow">
+                            <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/-DSVDcw6iW8?rel=0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+          <P>© Jonathan Cupples</P>
+        </footer>
+</body>
+</html>

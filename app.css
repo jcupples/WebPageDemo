@@ -1,0 +1,208 @@
+
+/*-------------ADD A FADE IN IMAGE OVERLAY TEXT FOR AN ELEMENT-------*/
+body {
+    background-color: cadetblue;
+    background-image: url(images/background.png);
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: lucida console;
+}
+
+h2{
+    font-family: lucida console;
+}
+
+h3{
+    font-family: lucida console;
+}
+
+h4{
+    font-family: lucida console;
+}
+
+h5{
+    font-family: lucida console;
+}
+
+h6{
+    font-family: lucida console;
+}
+p{
+    font-family: lucida console;  
+}
+
+/*------NAVBAR STYLING-----*/
+.navbar {
+    background-color: #800080;
+    /*
+    margin-bottom: 0;
+     border-radius: 0;
+     z-index: 9999;
+      width: 95%;*/
+    /*find a way to center this shit???*/
+}
+
+.navbar ul li a {
+    background-color: #800080;
+    color: black;
+}
+.navbar-nav li.active {
+    background-color:  #800080;
+    color: white;
+}
+
+.navbar-nav li a:hover {
+    background-color:  #800080;
+    color: white;
+}
+
+.navbar-brand {
+    background-image: url(http://mp3red.me/cover/5402026-50x50/synthwave.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 50px;
+}
+
+.navbar-collapse.collapse.in {
+    
+}
+/*
+#navButton.active a {
+    background: rgba(0, 0, 0, 0.3);
+}
+*/
+
+/*------END NAV STYLING----*/
+
+.btn {
+    background-color:  #4d0039;
+    color: white;
+}
+.btn:hover {
+    background-color:  #4d0039;
+    color: grey;   
+}
+
+.form-control {
+    background-color: #ff33bb;
+    color: black;
+}
+
+
+.headerstyle {
+    color: #ff33bb;
+    
+}
+.content {
+    position: relative;
+    z-index: 9999;
+}
+
+.showcase {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.showcasebottom {
+    background: rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
+}
+
+
+.shadow {
+      filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+    overflow: visible;
+}
+
+.h2showcase{
+    font-family: lucida console;
+    color:#ff33bb;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+    /* Add a gray background color and some padding to the footer */
+.footer {
+    background-color: #660066;
+    color: black;
+    padding: 1px;
+    width: 100%;
+    text-align: right;
+    color: white;
+}
+    
+  .carousel-inner .item img  {
+      height: auto;
+      width: 100%;
+      max-height: 600px;
+
+  }
+.img-responsive {
+    height: auto;
+    width: 100%;
+    max-height: 600px;
+}
+
+.carousel-caption {
+    color:darkgray;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    
+}
+
+.jumbotron {
+    text-align: center;
+    /*padding: 0px;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    background: transparent;
+}
+
+.textarea {
+    background-color: #800080;
+    padding: 20px;
+}
+.padding {
+    padding: 15px;
+    background-color: #ff33bb;
+}
+/*make buttons pop out on hover*/
+
+#mySlider {
+    margin: 0px;
+    padding: 0px;
+}
+#mySlider li {
+   
+    height: 15px;
+    width: 15px; 
+
+}
+
+#mySlider li.active {
+    height: 15px;
+    width: 15px;
+   background-color: gray;
+}
+
+.center {
+    text-align: center;
+}
+
+.navbar-toggle {
+    background-color:  #4d0039;
+}
+.icon-bar {
+    background-color: white;
+}
+
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
